@@ -97,7 +97,7 @@ module.exports = {
 
     const userData = {
       username: username,
-      email: `${username}@les-experts.tn`,
+      email: `${username}@kondarschool.tn`,
       password: body.tel,
       confirmed: true,
       blocked: false,
@@ -186,8 +186,8 @@ module.exports = {
 
     const userData = {
       username: username,
-      email: `${username}@les-experts.tn`,
-      password: `les-experts-${body.tel}`,
+      email: `${username}@kondarschool.tn`,
+      password: `kondar-${body.tel}`,
       confirmed: true,
       blocked: false,
       provider: "local",
