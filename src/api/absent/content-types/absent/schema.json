@@ -1,0 +1,30 @@
+{
+  "kind": "collectionType",
+  "collectionName": "absents",
+  "info": {
+    "singularName": "absent",
+    "pluralName": "absents",
+    "displayName": "absent",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "date": {
+      "type": "datetime"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "absents"
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::subject.subject"
+    }
+  }
+}

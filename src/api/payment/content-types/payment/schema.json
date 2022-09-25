@@ -1,0 +1,34 @@
+{
+  "kind": "collectionType",
+  "collectionName": "payments",
+  "info": {
+    "singularName": "payment",
+    "pluralName": "payments",
+    "displayName": "payment"
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "debut": {
+      "type": "date",
+      "required": true
+    },
+    "fin": {
+      "type": "date",
+      "required": true
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "payments"
+    },
+    "pack": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::pack.pack"
+    }
+  }
+}

@@ -1,0 +1,25 @@
+{
+  "kind": "collectionType",
+  "collectionName": "remarques",
+  "info": {
+    "singularName": "remarque",
+    "pluralName": "remarques",
+    "displayName": "remarque",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "remarque": {
+      "type": "text"
+    },
+    "student": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "plugin::users-permissions.user",
+      "inversedBy": "remarques"
+    }
+  }
+}

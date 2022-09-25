@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_niveau_niveau_scolaires",
+  "info": {
+    "displayName": "niveauScolaire",
+    "icon": "list-ul"
+  },
+  "options": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    }
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "packs",
+  "info": {
+    "singularName": "pack",
+    "pluralName": "packs",
+    "displayName": "pack",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "nom": {
+      "type": "string",
+      "required": true
+    },
+    "description": {
+      "type": "text"
+    },
+    "students": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "pack"
+    }
+  }
+}

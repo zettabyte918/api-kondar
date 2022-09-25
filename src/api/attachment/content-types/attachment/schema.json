@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "attachments",
+  "info": {
+    "singularName": "attachment",
+    "pluralName": "attachments",
+    "displayName": "attachment",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": false
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "richtext"
+    },
+    "files": {
+      "type": "media",
+      "multiple": true,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "subject": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::subject.subject",
+      "inversedBy": "attachments"
+    },
+    "grade": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::grade.grade"
+    }
+  }
+}
