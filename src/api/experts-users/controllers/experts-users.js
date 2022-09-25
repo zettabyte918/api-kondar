@@ -187,7 +187,7 @@ module.exports = {
     const userData = {
       username: username,
       email: `${username}@kondarschool.tn`,
-      password: `kondar-${body.tel}`,
+      password: `kondarschool-${body.tel}`,
       confirmed: true,
       blocked: false,
       provider: "local",
