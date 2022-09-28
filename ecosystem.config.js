@@ -1,7 +1,7 @@
 module.exports = {
   apps: [
     {
-      name: "les-experts-api",
+      name: "api-kondarschool",
       script: "yarn",
       args: "start",
       interpreter: "/bin/bash",
