@@ -3,8 +3,7 @@ module.exports = {
     {
       name: "api-kondarschool",
       script: "yarn",
-      args: "start",
-      interpreter: "/bin/bash",
+      args: "start-prod",
       env: {
         NODE_ENV: "production",
       },
