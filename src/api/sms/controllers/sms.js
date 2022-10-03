@@ -16,8 +16,7 @@ module.exports = {
       url: "https://api.orange.com/oauth/v3/token",
       headers: {
         "Content-Type": "application/x-www-form-urlencoded",
-        Authorization:
-          "Basic ZTdrV0RKSHA5U05RZ1F0RmdIU21OMnB0Q05BMFZaSEc6WXFQaFpUWVV4SWRDVkJUbw==",
+        Authorization: "Basic ",
       },
       data: data,
     };
